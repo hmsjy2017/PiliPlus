@@ -68,7 +68,7 @@ jobs:
           mkdir -p usr/share/icons/hicolor/512x512/apps
 
           printf "复制文件...\n"
-          cp -r ../build/linux/x64/release/bundle/* opt/PiliPlus
+          cp -r ../build/linux/arm64/release/bundle/* opt/PiliPlus
           cp -r ../assets/linux/DEBIAN .
           cp ../assets/linux/piliplus.desktop usr/share/applications
           cp ../assets/images/logo/logo.png usr/share/icons/hicolor/512x512/apps/piliplus.png

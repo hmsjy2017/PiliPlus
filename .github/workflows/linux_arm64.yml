@@ -111,7 +111,7 @@ jobs:
           DATE="$(date '+%a %b %d %Y')"
           SRC_DIR="$PWD/piliplus-${{ env.version }}"
           mkdir -p "$SRC_DIR/bundle" "$SRC_DIR/assets"
-          cp -r build/linux/x64/release/bundle/* "$SRC_DIR/bundle/"
+          cp -r build/linux/arm64/release/bundle/* "$SRC_DIR/bundle/"
           cp assets/linux/piliplus.desktop "$SRC_DIR/assets/piliplus.desktop"
           cp assets/images/logo/logo.png "$SRC_DIR/assets/piliplus.png"
           tar -zcvf "$RPM_BUILD_ROOT/SOURCES/piliplus-${{ env.version }}.tar.gz" -C "$PWD" "piliplus-${{ env.version }}"

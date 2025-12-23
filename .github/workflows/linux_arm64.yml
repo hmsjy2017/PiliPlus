@@ -97,7 +97,7 @@ jobs:
 
           printf "打包 deb 文件...\n"
           popd
-          dpkg-deb --build --verbose --root-owner-group "PiliPlus_linux_${{ env.version }}_amd64"
+          dpkg-deb --build --verbose --root-owner-group "PiliPlus_linux_${{ env.version }}_arm64"
           printf "完成: PiliPlus_linux_%s_arm64.deb\n" "${{ env.version }}"
         shell: bash
 
